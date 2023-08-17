@@ -35,7 +35,7 @@ public class ServerUpgraded {
                         protected void initChannel(NioSocketChannel ch) throws Exception {
                             ch.pipeline()
                                     // 使用Netty内置的Protobuf解码器
-                                    // 解析头部4个byte字节，int类型变量作为数据字节总大小
+                                    // 优先读取前4个byte字节(int整数)，以读取到的int为后续要读取的长度来进行数据读取;
                                     .addLast(new ProtobufVarint32FrameDecoder())
                                     // 自动将解析出的数据，反序列化为PayloadRequest对象
                                     .addLast(new ProtobufDecoder(Protocol.PayloadRequest.getDefaultInstance()))

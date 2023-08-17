@@ -221,7 +221,7 @@ public class CustomEncoder extends ByteToMessageCodec<Object> {
 
 <hr>
 
-### 常用的解码处理器
+### 常用的编码解码处理器
 #### LineBasedFrameDecoder 
 换行符解码器，以`\n`或者`\r\n`作为结尾标识进行数据包的解析，解析成一个完整的数据包;
 ```java
@@ -241,7 +241,7 @@ ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, Unpooled.wrappedBuffe
 如果未解析到指定的标识符，超出限制后一样抛出`TooLongFrameException`异常;
 <hr>
 
-#### StringDecoder 字符串类型解码器
+#### StringDecoder 
 
 将ByteBuf解码为String类型
 ```java
@@ -257,4 +257,21 @@ ch.pipeline()
             }
         });
 ```
+
+#### FixedLengthFrameDecoder
+以固定字节长度进行解析，每解析指定的长度后，作为一个ByteBuf;
+```java
+// 添加解码器,以固定字节长度进行解析，以每20个byte解析为一个ByteBuf
+ch.pipeline().addLast(new FixedLengthFrameDecoder(20))
+```
+
+<hr>
+
+#### ProtobufVarint32LengthFieldPrepender
+获取数据的字节长度，写入缓冲区前4个byte位置
+
+<hr>
+
+#### ProtobufVarint32FrameDecoder
+优先读取前4个byte字节(int整数)，以读取到的int为后续要读取的长度来进行数据读取;
 

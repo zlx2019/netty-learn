@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="655886a7-bd0e-4916-b3a3-bd7dffa2b1ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/zero/_03_netty/packets/demo4/ServerUpgraded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/zero/_03_netty/packets/demo4/ServerUpgraded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/zero/_03_netty/packets/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/zero/_03_netty/packets/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,10 +66,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "http.proxy",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -82,29 +82,17 @@
       <recent name="$PROJECT_DIR$/src/main/java/io/zero/_03_netty/packets/demo4/proto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.zero._03_netty.example.tcp_protobuf" />
       <recent name="io.zero._03_netty.packets.demo4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.io.zero._03_netty.example.websocket.Server">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.zero._03_netty.packets.demo5.Client" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.zero._03_netty.example.tcp_protobuf.Client" />
       <module name="netty-learn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.zero._03_netty.packets.demo4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientUpgraded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.zero._03_netty.packets.demo4.ClientUpgraded" />
-      <module name="netty-learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.zero._03_netty.packets.demo4.*" />
+          <option name="PATTERN" value="io.zero._03_netty.example.tcp_protobuf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +101,11 @@
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.zero._03_netty.packets.demo5.Server" />
+      <option name="MAIN_CLASS_NAME" value="io.zero._03_netty.example.tcp_protobuf.Server" />
       <module name="netty-learn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.zero._03_netty.packets.demo4.*" />
+          <option name="PATTERN" value="io.zero._03_netty.example.tcp_protobuf.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,39 +113,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerUpgraded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.zero._03_netty.packets.demo4.ServerUpgraded" />
-      <module name="netty-learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.zero._03_netty.packets.demo4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="make" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/src/main/java/io/zero/_03_netty/example/tcp_protobuf/proto/Makefile" target="make" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
     </configuration>
-    <configuration name="io.zero._03_netty.example.websocket.Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.zero._03_netty.example.websocket.Server" />
-      <module name="netty-learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.zero._03_netty.example.websocket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Makefile Target.make" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.io.zero._03_netty.example.websocket.Server" />
-        <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.ClientUpgraded" />
-        <item itemvalue="Application.ServerUpgraded" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Makefile Target.make" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +146,8 @@
       <workItem from="1691896350197" duration="15442000" />
       <workItem from="1692005939659" duration="21165000" />
       <workItem from="1692097778803" duration="12320000" />
-      <workItem from="1692149517407" duration="9202000" />
+      <workItem from="1692149517407" duration="9707000" />
+      <workItem from="1692196667849" duration="16216000" />
     </task>
     <servers />
   </component>
